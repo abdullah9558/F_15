@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>F-16</title>
+  <title>F-15</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
   <link rel="stylesheet" href="Control.FullScreen.css" />
@@ -65,7 +65,7 @@
             return this._div;
         };
         title.update = function() {
-            this._div.innerHTML = '<h3>F-16</h3>';
+            this._div.innerHTML = '<h3>F-15</h3>';
         };
         title.addTo(map);
 
@@ -91,7 +91,7 @@
     };
 
     var overlays = {
-      'F-16': layer1
+      'F-15': layer1
     };
 
     L.control.layers(baseLayers, overlays).addTo(map);
